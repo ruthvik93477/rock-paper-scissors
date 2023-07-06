@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body class="body1">
+    <p class="heading">Rock Paper Scissors</p>
+    <style>
+        .body1{
+            background-color: aqua;
+        }
+        .heading{
+            font-size: 50px;
+            text-align: center;
+            font-weight: 700;
+            color:black;
+        }
+        .rock-button{
+            background-color: grey;
+            height:70px;
+            width: 190px;
+            color:white;
+            border:none;
+            border-radius: 20px;
+            font-size:20px;
+            cursor:pointer;
+            margin-right: 20px;
+        }
+        .rock-button:hover{
+            height:80px;
+            width:200px;
+            background-color: brown;
+        }
+        .paper-button{
+            background-color: blue;
+            height:70px;
+            width: 190px;
+            color:white;
+            border:none;
+            border-radius: 20px;
+            font-size:20px;
+            cursor:pointer;
+            margin-right: 20px;
+        }
+        .paper-button:hover{
+            height:80px;
+            width:200px;
+            background-color: red; 
+        }
+        .scissors-button{
+            background-color: black;
+            height:70px;
+            width: 190px;
+            color:white;
+            border:none;
+            border-radius: 20px;
+            font-size:20px;
+            cursor:pointer;
+            margin-right: 20px;
+        }
+        .scissors-button:hover{
+            height:80px;
+            width:200px;
+            background-color: orange;
+        }
+        .adjust{
+          text-align: center;
+        }
+    </style>
+    <div class="adjust">
+    <button onclick="
+      const randomNumber = Math.random();
+      let computerMove = '';
+      if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        computerMove = 'rock';
+      } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        computerMove = 'paper';
+      } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        computerMove = 'scissors';
+      }
+      let result = '';
+      if (computerMove === 'rock') {
+        result = 'Tie.';
+      } else if (computerMove === 'paper') {
+        result = 'You lose.';
+      } else if (computerMove === 'scissors') {
+        result = 'You win.';
+      }
+      alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+    " class="rock-button">Rock</button>
+
+    <button onclick="
+      const randomNumber = Math.random();
+      let computerMove = '';
+      if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        computerMove = 'rock';
+      } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        computerMove = 'paper';
+      } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        computerMove = 'scissors';
+      }
+      let result = '';
+      if (computerMove === 'rock') {
+        result = 'You win.';
+      } else if (computerMove === 'paper') {
+        result = 'Tie.';
+      } else if (computerMove === 'scissors') {
+        result = 'You lose.';
+      }
+      alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+    " class="paper-button">Paper</button>
+
+    <button onclick="
+      const randomNumber = Math.random();
+      let computerMove = '';
+      if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        computerMove = 'rock';
+      } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        computerMove = 'paper';
+      } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        computerMove = 'scissors';
+      }
+      let result = '';
+      if (computerMove === 'rock') {
+        result = 'You lose.';
+      } else if (computerMove === 'paper') {
+        result = 'You win.';
+      } else if (computerMove === 'scissors') {
+        result = 'Tie.';
+      }
+      alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+    " class="scissors-button">Scissors</button>
+    </div>
+
+    <script>
+      
+    </script>
+  </body>
+</html>
