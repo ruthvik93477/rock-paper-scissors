@@ -3,11 +3,24 @@
   <head>
     <title>Rock Paper Scissors</title>
   </head>
-  <body class="body1">
+  <body class="body1" style="background-image: url(D:\html,css\rsp.jpg);">
     <p class="heading">Rock Paper Scissors</p>
+    <div class="pics">
+      <img src="D:\html,css\rock.jpg" class="rockp">
+      <img src="D:\html,css\paper.webp"class="paperp">
+      <img src="D:\html,css\scissors.jpg"class="scissorsp">
+    </div>
     <style>
+      .rockp,.paperp,.scissorsp{
+        height:200px;
+        border-radius: 400px;
+        margin-right: 20px;
+      }
+      .pics{
+        text-align: center;
+      }
         .body1{
-            background-color: aqua;
+            background-color: rgb(228, 116, 116);
         }
         .heading{
             font-size: 50px;
@@ -31,6 +44,11 @@
             width:200px;
             background-color: brown;
         }
+        .rock-button:active{
+            height:80px;
+            width:200px;
+            background-color: purple;
+        }
         .paper-button{
             background-color: blue;
             height:70px;
@@ -47,6 +65,11 @@
             width:200px;
             background-color: red; 
         }
+        .paper-button:active{
+            height:80px;
+            width:200px;
+            background-color: indigo;
+        }
         .scissors-button{
             background-color: black;
             height:70px;
@@ -62,6 +85,11 @@
             height:80px;
             width:200px;
             background-color: orange;
+        }
+        .scissors-button:active{
+            height:80px;
+            width:200px;
+            background-color: green;
         }
         .adjust{
           text-align: center;
